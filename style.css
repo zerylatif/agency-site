@@ -1,0 +1,554 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #fff;
+}
+
+.header {
+
+  height: 100px;
+  margin: 8px;
+  padding: 8px;
+ 
+}
+
+/* The side navigation menu */
+.sidenav {
+    
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: absolute; 
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #072c38;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+    
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: aqua;
+    display: flex;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: whitesmoke;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Position toggle icon */
+.toggle-icon{
+
+  float: right;
+  
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+  
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+   /* Style the Un-order list by setting its list-style to none */
+   .social-icons ul {
+    list-style: none;
+    
+  }
+  
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+  .social-icons ul li {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 1px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 60%;
+    transition: all 0.5s ease;
+    display: inline-block;
+  }
+  
+  /* Style the icons by setting its color and margin-top value to 2px 
+  to align it properly */
+  .social-icons ul li .fa {
+    color: #D8E2DC;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 0.5s ease;
+    font-size: 29px;
+  }
+  
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .social-icons ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  .social-icons ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .social-icons ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .social-icons ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .social-icons ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .social-icons ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 140px){
+    .social-icons {
+        width: 350px;
+    }
+    .social-icons ul li{
+        margin-top: 7px;
+    }
+    .social-icons ul li.google{
+        margin-left: 60px;
+    }
+  
+  @media screen and (max-width: 340px){
+
+  }
+    .social-icons {
+        width: 150px;
+    }
+    .social-icons ul li{
+        margin:7px;
+    }
+    .social-icons ul li.google {
+        margin-left: 7px;
+    }
+    
+   
+  }
+
+.section {
+
+    position: relative;
+    width: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.section h1{
+
+  text-align: left;
+  font-size: 3rem;
+  font-family: 'Teko';
+  background: transparent;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  color: #072c38;
+  
+
+}
+
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.video-container video {
+
+  position: relative;
+  width: 100%;
+}
+
+.search-container {
+
+  width: 100%;
+  height: 100px;
+  background-color: #072c38;
+  
+}
+
+.search-container h3 {
+
+  margin: 20px;
+  padding: 18px;
+  float: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 7px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+ 
+}
+
+.search-field {
+
+  height: 30px;
+  margin: 20px;
+  padding: 19px;
+  
+
+
+}
+
+.skills {
+
+  width: 400px;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+
+}
+
+.location {
+
+  width: 400px;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+}
+
+.search-btn {
+
+  height: 44px;
+  color: #072c38;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: aqua;
+  
+  
+
+}
+
+.search-btn:hover {
+
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+
+.main {
+
+  height: 1300px;
+  width: 100%;
+  
+
+}
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #072c38;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: aqua;
+}
+
+.btn:hover {
+  background: whitesmoke;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background:#072c38;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.subs-odometer {
+
+  font-size: 58px;
+  color: aqua;
+  font-weight: bold;
+  font-family: teko, sans-serif;
+  text-align: center;
+  padding: 8px;
+  letter-spacing: 4px;
+
+}
+
+
+  .footer {
+    z-index: 1;
+    position: cover;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #072c38;
+    width: 100%;
+  
+  }
+  .footer a {
+    color: aqua;
+  }
+  .footer p.copyright {
+    font-weight: 20;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .footer-spacer {
+    height: 10px;
+    background-color: #072c38;
+  }
+  .footer-menu li {
+    font-weight: 200;
+    display: inline-block;
+  }
+  .footer-menu li a[href]:hover {
+    color: whitesmoke;
+  }
+  .footer-menu li:after {
+    content: ' | ';
+  }
+  .footer-menu li:last-child:after {
+    display: none;
+  }
+  .footer-social ul {
+    list-style: none;
+    
+  }
+  
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+  .footer-social ul li {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 1px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 60%;
+    transition: all 0.5s ease;
+    display: inline-block;
+  }
+  
+  /* Style the icons by setting its color and margin-top value to 2px 
+  to align it properly */
+  .footer-social ul li .fa {
+    color: #D8E2DC;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 0.5s ease;
+    font-size: 29px;
+  }
+  
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .footer-social ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-social ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .footer-social ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-social ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .footer-social ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-social ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 140px){
+    .footer-social {
+        width: 350px;
+    }
+    .footer-social ul li{
+        margin-top: 7px;
+    }
+    .footer-social ul li.google{
+        margin-left: 60px;
+    }
+  
+  @media screen and (max-width: 340px){
+
+  }
+  .footer-social {
+        width: 150px;
+    }
+    .footer-social ul li{
+        margin:7px;
+    }
+    .footer-social ul li.google {
+        margin-left: 7px;
+    }
